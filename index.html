@@ -68,10 +68,14 @@
                 Desarrollo de un sistema de proxy-inverso a modo de enrutamiento automático para redirigir solicitudes entre servicios de la empresa, gestión escalable y de muy fácil manejo de estas reglas/rutas de redireccionamiento.
               </li>
               <li>
-                Servicio GetNews para la obtención automatizada y programada de noticias diarias de fuentes RSS para su envío a las pantallas. Las noticias pasan por un proceso de filtrado mediante reglas específicas de antigüedad, límites por categoría, longitud, etc. El contenido se sube empaquetado a un servidor FTP donde las pantallas lo descargan mediante reglas específicas de encolamiento definidas en una base de datos. Las noticias que recibe cada pantalla varían en función del idioma (un cliente estadounidense recibiría noticias en inglés, por ejemplo). Las noticias antiguas se eliminan para ahorrar espacio.
+                Servicio GetNews para la obtención automatizada y programada de noticias diarias de fuentes RSS para su envío a las pantallas. 
+                Las noticias pasan por un proceso de filtrado mediante una serie de reglas y filtros específicos
+                para subirse a un servidor externo para su posterior descarga por parte de las pantallas, y que cada pantalla reciba las noticias que le corresponden, evitando duplicados o saturar el servidor.
               </li>
               <li>
-                Servicio GetMeteo para la obtención automatizada y programada de previsiones del clima, basada en la localización exacta de cada pantalla utilizando una API externa. Nuevamente, el contenido se sube a un servidor FTP donde las pantallas lo descargan mediante reglas específicas de encolamiento definidas en una base de datos para que cada pantalla reciba la previsión que le corresponde. Las estimaciones antiguas se eliminan para ahorrar espacio. Sistema fallback implementado (el formato del código postal no es el mismo en todos los países).
+                Servicio GetMeteo para la obtención automatizada y programada de previsiones del clima, basada en la geolocalización de cada pantalla.
+                Nuevamente, el contenido se sube a un servidor externo donde cada pantalla descarga la previsión que le corresponde de manera ordenada,
+                con reglas específicas que pueden llegar a variar por el país, y evitando duplicaciones o la saturación del servidor.
               </li>
               <li>
                 Fui responsable de recrear un proyecto originalmente desarrollado en Python, migrándolo a Go para mejorar el rendimiento y facilitar su mantenimiento e implementando mejoras.
