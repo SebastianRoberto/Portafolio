@@ -692,17 +692,18 @@ body:not(.user-is-tabbing) a:focus {
     font-family: 'Jost', sans-serif;
 }
 
-.experiencia__header {
+.experiencia__titulo-contenedor {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     flex-wrap: wrap;
 }
 
 .experiencia__periodo {
     font-size: 1.6rem;
     color: var(--blanco-1);
+    margin-bottom: 1rem;
     display: block;
 }
 
@@ -777,7 +778,7 @@ body:not(.user-is-tabbing) a:focus {
         font-size: 1.4rem;
         margin-left: 1.2rem;
     }
-    .experiencia__header {
+    .experiencia__titulo-contenedor {
         gap: 1rem;
         flex-direction: column;
         align-items: flex-start;
