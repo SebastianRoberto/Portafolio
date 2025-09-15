@@ -331,7 +331,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding: var(--espaciado-normal) 0;
 }
 
@@ -391,6 +391,45 @@ body:not(.user-is-tabbing) a:focus {
     right: 0;
     height: 2px;
     background: var(--rojo);
+}
+
+/* --------------------------------------- */
+/* ----- Selector de Idioma ----- */
+/* --------------------------------------- */
+
+.idioma-selector {
+    background: transparent;
+    border: 1px solid var(--rojo);
+    color: var(--blanco);
+    font-family: 'Jost', sans-serif;
+    font-size: 1.6rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    outline: none;
+}
+
+.idioma-selector:focus {
+    outline: 2px solid var(--rojo);
+    outline-offset: 2px;
+}
+
+.idioma-selector:hover {
+    background: var(--rojo);
+}
+
+.idioma-selector option {
+    background: var(--negro);
+    color: var(--blanco);
+    border: none;
+}
+
+@media(max-width: 500px) {
+    .idioma-selector {
+        font-size: 1.4rem;
+        padding: 0.6rem 1rem;
+    }
 }
 
 /* --------------------------------------- */

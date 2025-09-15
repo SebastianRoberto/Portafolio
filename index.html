@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-  <title>Mi Portafolio|💻.</title>
+  <title data-es="Mi Portafolio | 💻" data-en="My Portfolio | 💻">Mi Portafolio | 💻</title>
   <meta name="description" content="Portafolio">
   <meta name="keywords" content="Sebastian Palomino, Go, Backend, APIs, Microservicios" />
   <link rel="stylesheet" href="index.css" />
@@ -15,10 +15,16 @@
     <div class="fila">
       <nav class="nav" role="navigation">
         <ul class="nav__elementos">
-          <li class="nav__elemento"><a href="#sobre-mi" class="nav__enlace">Sobre mí</a></li>
-          <li class="nav__elemento"><a href="#experiencia" class="nav__enlace">Experiencia</a></li>
-          <li class="nav__elemento"><a href="#proyectos" class="nav__enlace">Proyectos</a></li>
-          <li class="nav__elemento"><a href="#contacto" class="nav__enlace">Contacto</a></li>
+          <li class="nav__elemento"><a href="#sobre-mi" class="nav__enlace" data-es="Sobre mí" data-en="About me">Sobre mí</a></li>
+          <li class="nav__elemento"><a href="#experiencia" class="nav__enlace" data-es="Experiencia" data-en="Experience">Experiencia</a></li>
+          <li class="nav__elemento"><a href="#proyectos" class="nav__enlace" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+          <li class="nav__elemento"><a href="#contacto" class="nav__enlace" data-es="Contacto" data-en="Contact">Contacto</a></li>
+          <li class="nav__elemento">
+            <select class="idioma-selector" id="idioma-selector">
+              <option value="es">🇪🇸 ES</option>
+              <option value="en">🇺🇸 EN</option>
+            </select>
+          </li>
         </ul>
       </nav>
     </div>
@@ -27,9 +33,9 @@
         <h1 class="titulo-principal">
           <span>Sebastian Palomino |💻</span>
         </h1>
-        <p>Desarrollador Backend especializado en Go</p>
-        <a href="#contacto" class="btn btn--rosa">📧 Contacto</a>
-        <a href="./cv.pdf" class="btn btn--rosa" target="_blank">📄 Mi CV</a>
+        <p data-es="Desarrollador Backend especializado en Go" data-en="Backend Developer focused on Go">Desarrollador Backend especializado en Go</p>
+        <a href="#contacto" class="btn btn--rosa" data-es="📧 Contacto" data-en="📧 Contact">📧 Contacto</a>
+        <a href="./CV.pdf" class="btn btn--rosa cv-link" target="_blank" data-es="📄 Mi CV" data-en="📄 My CV">📄 Mi CV</a>
       </div>
     </div>
   </header>
@@ -37,14 +43,14 @@
     <!-- Sobre mí -->
     <section class="sobre-mi" id="sobre-mi">
       <div class="fila">
-        <h2>Sobre mí</h2>
+        <h2 data-es="Sobre mí" data-en="About me">Sobre mí</h2>
         <h5 class="sobre-mi__nombre">Sebastian Palomino</h5>
         <div class="sobre-mi__contenido">
           <div class="sobre-mi__texto">
-            <p>
+            <p data-es="Soy un programador backend especializado en Go. Me dedico a construir sistemas rápidos, seguros, escalables y de alto rendimiento. Tengo una solida experiencia diseñando APIs, microservicios y trabajando con arquitecturas altamente escalables bajo el marco de desarrollo CI/CD así como los principios de clean architecture y domain-driven design (DDD) para asegurar un código mantenible y testable." data-en="I am a backend developer focused on Go. I specialize in building fast, secure, scalable and high-performance systems. I have solid experience designing APIs, microservices and working with highly scalable architectures under the CI/CD development framework as well as clean architecture and domain-driven design (DDD) principles to ensure maintainable and testable code.">
               Soy un programador backend especializado en Go. Me dedico a construir sistemas rápidos, seguros, escalables y de alto rendimiento. Tengo una solida experiencia diseñando APIs, microservicios y trabajando con arquitecturas altamente escalables bajo el marco de desarrollo CI/CD así como los principios de clean architecture y domain-driven design (DDD) para asegurar un código mantenible y testable. 
             </p>
-            <a href="./cv.pdf" class="btn" target="_blank">📄 Mi CV</a>
+            <a href="./CV.pdf" class="btn cv-link" target="_blank" data-es="📄 Mi CV" data-en="📄 My CV">📄 Mi CV</a>
           </div>
           <div class="sobre-mi__foto-contenedor">
             <img class="sobre-mi__foto" src="./images/sobremi.webp" alt="Foto" />
@@ -55,36 +61,36 @@
     <!-- Experiencia -->
     <section class="experiencia" id="experiencia">
       <div class="fila">
-        <h2>Experiencia</h2>
+        <h2 data-es="Experiencia" data-en="Experience">Experiencia</h2>
         <div class="experiencia__contenido">
           <div class="experiencia__item">
             <h4>Liftel (Grupo Netel)</h4>
             <span class="experiencia__periodo">2025</span>
-            <p>
+            <p data-es="Durante mi periodo de prácticas en Liftel estuve encargado del desarrollo de múltiples servicios y soluciones en el sector de los ascensores, tanto para uso interno como de nuestros clientes, permitiéndoles la monitorización y manejo de sus ascensores desde la nube. Lógicamente no puedo compartir el código pero describiré algunas cosas relevantes en la medida de lo posible:" data-en="During my internship at Liftel I was responsible for developing multiple services and solutions in the elevator sector, both for internal use and for our clients, enabling them to monitor and manage their elevators from the cloud. I cannot share the code but I will describe some relevant aspects as much as possible:">
               Durante mi periodo de prácticas en Liftel estuve encargado del desarrollo de múltiples servicios y soluciones en el sector de los ascensores, tanto para uso interno como de nuestros clientes, permitiéndoles la monitorización y manejo de sus ascensores desde la nube. Lógicamente no puedo compartir el código pero describiré algunas cosas relevantes en la medida de lo posible:
             </p>
             <ul class="experiencia__lista">
-              <li>
+              <li data-es="Desarrollo de un sistema de proxy-inverso a modo de enrutamiento automático para redirigir solicitudes entre servicios de la empresa, gestión escalable y de muy fácil manejo de estas reglas/rutas de redireccionamiento." data-en="Developed a reverse proxy system for automatic routing to redirect requests between company services, with scalable and easy-to-manage redirection rules/routes.">
                 Desarrollo de un sistema de proxy-inverso a modo de enrutamiento automático para redirigir solicitudes entre servicios de la empresa, gestión escalable y de muy fácil manejo de estas reglas/rutas de redireccionamiento.
               </li>
-              <li>
+              <li data-es="Servicio GetNews para la obtención automatizada y programada de noticias diarias de fuentes RSS para su envío a las pantallas. Las noticias pasan por un proceso de filtrado mediante una serie de reglas y filtros específicos para subirse a un servidor externo para su posterior descarga por parte de las pantallas, y que cada pantalla reciba las noticias que le corresponden, evitando duplicados o saturar el servidor." data-en="GetNews service for automated and scheduled daily news retrieval from RSS sources for display screens. News goes through a filtering process using specific rules and filters, uploaded to an external server for screens to download, ensuring each screen receives relevant news while avoiding duplicates and server overload.">
                 Servicio GetNews para la obtención automatizada y programada de noticias diarias de fuentes RSS para su envío a las pantallas. 
                 Las noticias pasan por un proceso de filtrado mediante una serie de reglas y filtros específicos
                 para subirse a un servidor externo para su posterior descarga por parte de las pantallas, y que cada pantalla reciba las noticias que le corresponden, evitando duplicados o saturar el servidor.
               </li>
-              <li>
+              <li data-es="Servicio GetMeteo para la obtención automatizada y programada de previsiones del clima, basada en la geolocalización de cada pantalla. Nuevamente, el contenido se sube a un servidor externo donde cada pantalla descarga la previsión que le corresponde de manera ordenada, con reglas específicas que pueden llegar a variar por el país, y evitando duplicaciones o la saturación del servidor." data-en="GetMeteo service for automated and scheduled weather forecast retrieval, based on each screen's geolocation. Content is uploaded to an external server where each screen downloads its corresponding forecast in an orderly manner, with country-specific rules, avoiding duplications and server overload.">
                 Servicio GetMeteo para la obtención automatizada y programada de previsiones del clima, basada en la geolocalización de cada pantalla.
                 Nuevamente, el contenido se sube a un servidor externo donde cada pantalla descarga la previsión que le corresponde de manera ordenada,
                 con reglas específicas que pueden llegar a variar por el país, y evitando duplicaciones o la saturación del servidor.
               </li>
-              <li>
+              <li data-es="Fui responsable de recrear un proyecto originalmente desarrollado en Python, migrándolo a Go para mejorar el rendimiento y facilitar su mantenimiento e implementando mejoras." data-en="Responsible for recreating a project originally developed in Python, migrating it to Go to improve performance and facilitate maintenance while implementing additional improvements.">
                 Fui responsable de recrear un proyecto originalmente desarrollado en Python, migrándolo a Go para mejorar el rendimiento y facilitar su mantenimiento e implementando mejoras.
               </li>
-              <li>
+              <li data-es="Colaboración activa en un proyecto donde, si bien el desarrollo original no fue de mi autoría, me encargué de refactorizar partes del código para mejorar su claridad, mantenimiento y rendimiento. También realicé mejoras en el tratamiento de respuestas asíncronas y en la interacción con la base de datos. Se modificó la lógica de varios endpoints para que subservicios pudieran obtener y mostrar correctamente datos provenientes de un servidor externo, a través de múltiples endpoints, los cuales interactuaban directamente con las pantallas o emitían órdenes específicas como ordenes de descarga, reinicio, capturas de pantalla, entre otras." data-en="Active collaboration on a project where, although I didn't develop the original code, I was responsible for refactoring parts of the code to improve clarity, maintenance and performance. I also implemented improvements in handling asynchronous responses and database interactions. Modified the logic of several endpoints so subservices could correctly obtain and display data from an external server through multiple endpoints, which interacted directly with screens or issued specific commands such as download orders, restart, screenshots, among others.">
                 Colaboración activa en un proyecto donde, si bien el desarrollo original no fue de mi autoría, me encargué de refactorizar partes del código para mejorar su claridad, mantenimiento y rendimiento. También realicé mejoras en el tratamiento de respuestas asíncronas y en la interacción con la base de datos. Se modificó la lógica de varios endpoints para que subservicios pudieran obtener y mostrar correctamente datos provenientes de un servidor externo, a través de múltiples endpoints, los cuales interactuaban directamente con las pantallas o emitían órdenes específicas como ordenes de descarga, reinicio, capturas de pantalla, entre otras.
               </li>
             </ul>
-            <p>
+            <p data-es="Todos estos proyectos fueron debidamente documentados en beneficio del equipo de desarrollo, ya sea mediante herramientas como Swagger UI y ReDoc (basadas en especificaciones OpenAPI), o mediante la elaboración de documentos técnicos. Para los proyectos GetNews y GetMeteo de envío de recursos a las pantallas se creó un sitio web con dos apartados: uno para que el equipo de Marketing visualizara y gestionara las noticias RSS diarias, y otro de acceso privado para el equipo de desarrollo con las especificaciones técnicas del proyecto. También testee y documenté un par de proyectos que no eran míos." data-en="All these projects were properly documented for the development team using tools like Swagger UI and ReDoc (based on OpenAPI specifications) and technical documentation. For the GetNews and GetMeteo projects for sending resources to screens, a website was created with two sections: one for the Marketing team to view and manage daily RSS news, and another with private access for the development team containing the technical specifications. I also tested and documented a couple of projects that weren't mine.">
               Todos estos proyectos fueron debidamente documentados en beneficio del equipo de desarrollo, ya sea mediante herramientas como Swagger UI y ReDoc (basadas en especificaciones OpenAPI), o mediante la elaboración de documentos técnicos. Para los proyectos GetNews y GetMeteo de envío de recursos a las pantallas se creó un sitio web con dos apartados: uno para que el equipo de Marketing visualizara y gestionara las noticias RSS diarias, y otro de acceso privado para el equipo de desarrollo con las especificaciones técnicas del proyecto. También testee y documenté un par de proyectos que no eran míos.
             </p>
           </div>
@@ -94,13 +100,13 @@
     <!-- Proyectos -->
     <section class="proyectos" id="proyectos">
       <div class="fila">
-        <h2>Proyectos personales</h2>
+        <h2 data-es="Proyectos personales" data-en="Personal Projects">Proyectos personales</h2>
         <div class="proyectos__cajas">
           <!-- Proyecto 1 -->
           <div class="proyecto__caja">
             <div class="proyecto__texto">
               <h3>PriceTracker</h3>
-              <p>
+              <p data-es="Proyecto de web scraping con Go que rastrea y compara precios de productos tecnológicos de varias tiendas online. Permite a los usuarios crear alertas de precios y recibir notificaciones tanto por correo como dentro del propio sistema de notificaciones de la aplicación." data-en="Go web scraping project that tracks and compares prices of tech products from various online stores. Allows users to create price alerts and receive notifications via email and through the application's built-in notification system.">
                 Proyecto de web scraping con Go que rastrea y compara precios de productos tecnológicos de varias tiendas online. Permite a los usuarios crear alertas de precios y recibir notificaciones tanto por correo como dentro del propio sistema de notificaciones de la aplicación.
               </p>
               <ul class="proyecto__lista">
@@ -111,7 +117,7 @@
                 <li>MySQL</li>
               </ul>
               <div class="proyecto__enlaces">
-                <a href="https://github.com/SebastianRoberto/PriceTracker" class="enlace__texto" target="_blank">
+                <a href="https://github.com/SebastianRoberto/PriceTracker" class="enlace__texto" target="_blank" data-es="Ver código" data-en="View code">
                   Ver código <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/SebastianRoberto/PriceTracker" target="_blank">
@@ -127,7 +133,7 @@
           <div class="proyecto__caja">
             <div class="proyecto__texto">
               <h3>DailyNews</h3>
-              <p>
+              <p data-es="Plataforma para la obtención y visualización de noticias diarias de fuentes RSS gestionadas por el usuario." data-en="Platform for retrieving and displaying daily news from user-managed RSS sources.">
                 Plataforma para la obtención y visualización de noticias diarias de fuentes RSS gestionadas por el usuario.
               </p>
               <ul class="proyecto__lista">
@@ -139,7 +145,7 @@
                 <li>TailwindCSS</li>
               </ul>
               <div class="proyecto__enlaces">
-                <a href="https://github.com/SebastianRoberto/DailyNews" class="enlace__texto" target="_blank">
+                <a href="https://github.com/SebastianRoberto/DailyNews" class="enlace__texto" target="_blank" data-es="Ver código" data-en="View code">
                   Ver código <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/SebastianRoberto/DailyNews" target="_blank">
@@ -155,7 +161,7 @@
           <div class="proyecto__caja">
             <div class="proyecto__texto">
               <h3>Portafolio</h3>
-              <p>
+              <p data-es="Este es el código del portafolio que estas viendo. Es una web bastante simple, responsive, de carga rápida y optimizado para todos los dispositivos. Ideal para mostrar proyectos y experiencia de forma clara y atractiva, siéntete libre de usar la plantilla." data-en="This is the code for the portfolio you're currently viewing. It's a simple, responsive, fast-loading website optimized for all devices. Perfect for showcasing projects and experience in a clear and attractive way - feel free to use the template.">
                 Este es el código del portafolio que estas viendo. Es una web bastante simple, responsive, de carga rápida y optimizado para todos los dispositivos. Ideal para mostrar proyectos y experiencia de forma clara y atractiva, siéntete libre de usar la plantilla.
               </p>
               <ul class="proyecto__lista">
@@ -164,7 +170,7 @@
                 <li>JavaScript</li>
               </ul>
               <div class="proyecto__enlaces">
-                <a href="https://github.com/SebastianRoberto/Portafolio" class="enlace__texto" target="_blank">
+                <a href="https://github.com/SebastianRoberto/Portafolio" class="enlace__texto" target="_blank" data-es="Ver código" data-en="View code">
                   Ver código <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/SebastianRoberto/Portafolio" target="_blank">
@@ -183,9 +189,9 @@
   <!-- Contacto -->
   <section class="contacto" id="contacto">
     <div class="fila">
-      <h2>Contacto</h2>
+      <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
       <div class="contacto__info">
-        <p>
+        <p data-es="¿Buscas un sistema backend robusto, eficiente y escalable? ¿Tienes alguna consulta o quieres ponerte en contacto conmigo? No dudes en escribirme, responderé lo antes posible." data-en="Looking for a robust, efficient and scalable backend system? Have any questions or want to get in touch? Don't hesitate to reach out - I'll respond as soon as possible.">
           ¿Buscas un sistema backend robusto, eficiente y escalable? ¿Tienes alguna consulta o quieres ponerte en contacto conmigo? No dudes en escribirme, responderé lo antes posible.
         </p>
         <div class="contacto__datos">
@@ -217,7 +223,7 @@
       </ul>
     </div>
   </footer>
-  <a href="#inicio" class="volver-arriba" title="Volver arriba">
+  <a href="#inicio" class="volver-arriba" title="Volver arriba" data-es-title="Volver arriba" data-en-title="Back to top">
     <img src="./images/arrow-up.svg" alt="Volver arriba" class="volver-arriba__imagen"/>
   </a>
   <script src="./index.js"></script>
